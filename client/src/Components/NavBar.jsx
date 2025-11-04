@@ -1,32 +1,42 @@
 import React from "react";
+import "../styles/NavBar.css";
+import profilePic from "../assets/profile-pic.jpg";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+    const navigate = useNavigate()
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-        <span className="navbar-brand">Form</span>
-        <button className="navbar-toggler" type="button">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <span className="nav-link">Home</span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link">About</span>
-            </li>
-            <li className="nav-item">
-              <span className="nav-link">Contact</span>
-            </li>
-          </ul>
+    <div>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
+            Dashboard
+          </a>
+          <button className="navbar-toggler" type="button">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item" onClick={()=>navigate('/')}>
+                <a className="nav-link" aria-current="page">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link">
+                  Chat
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className=" container d-flex justify-content-end">
-          <button className="btn btn-primary mx-2">Login</button>
-          <button className="btn btn-warning mx-2">Profile</button>
+        <div className="profile"
+        onClick={()=>navigate('/profile')}>
+          <img src={profilePic} height={50} width={50} />
+          <p>Profile</p>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

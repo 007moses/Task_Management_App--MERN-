@@ -1,0 +1,19 @@
+#register-form{
+    width: 50%;
+    border: 5px solid black;
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 1rem;
+}
+.heading{
+    text-align: center;
+}
+.register-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.register-button >button{
+    width: 40%;
+}

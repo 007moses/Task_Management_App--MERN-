@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 50%;
+}
+#add-btn {
+  margin-left: 1.5rem;
+  width: 100px;
+}
+#edit-btn {
+  width: 35%;
+}
+#delete-btn {
+  width: 35%;
+}
+.button-group{
+    /* border: 2px solid black; */
+    width: 70%;
+    display: flex;
+    justify-content: space-between ;
+}
+
+#task-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border: 3px solid green;
+  height: 100%;
+  border-radius: 20px;
+}
+.tasks {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+  margin-top: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.task-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid pink;
+  border-radius: 10px;
+  width: 60%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
