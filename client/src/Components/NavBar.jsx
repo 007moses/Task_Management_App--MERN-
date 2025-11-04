@@ -10,7 +10,7 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" style={{cursor:'pointer'}} onClick={()=>navigate('/')}>
-            Dashboard
+            TaskDesk
           </a>
           <button className="navbar-toggler" type="button">
             <span className="navbar-toggler-icon"></span>
